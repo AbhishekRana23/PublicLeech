@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM alpine:3.10.2
 RUN apk add --no-cache ca-certificates
 
 RUN apk add --no-cache --update \
