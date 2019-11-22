@@ -1,10 +1,12 @@
 FROM python:3.8-slim-buster
 
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
-COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update
-RUN apt-get install -y aria2
+RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
+RUN cd PublicLeech
+RUN virtualenv -p /usr/bin/python3 venv
+RUN . ./venv/bin/activate
+RUN pip install -r requirements.txt
+
 
 CMD ["bash","start.sh"]
