@@ -6,7 +6,7 @@ RUN cd PublicLeech
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 COPY . .
-
+RUN pip install virtualenv  
 
 RUN virtualenv -p /usr/bin/python3 venv
 RUN . ./venv/bin/activate
