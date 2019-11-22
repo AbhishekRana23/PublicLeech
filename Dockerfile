@@ -1,4 +1,4 @@
-FROM buster
+FROM python:3.8-slim-buster
 RUN apt-get install pip
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
