@@ -1,13 +1,5 @@
-FROM alpine:3.10.2
-RUN apk add --no-cache ca-certificates
-
-RUN apk add --no-cache --update \
-      git \
-      bash \
-      nodejs \
-      npm \
-      aria2 \
-      pip
+FROM buster
+RUN apt-get install pip
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
 RUN pip install --no-cache-dir -r requirements.txt
