@@ -1,4 +1,4 @@
-FROM ubuntu:latest && FROM python:3.8-slim-buster
+FROM ubuntu:latest && python:3.8-slim-buster
 RUN apt-get update 
 RUN apt install -y python3-pip && apt install -y git
 RUN pip --version
