@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+RUN apt-get update
 RUN git init
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
