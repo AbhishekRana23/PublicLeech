@@ -7,8 +7,6 @@ RUN apk add --no-cache --update \
       nodejs \
       npm \
       aria2
-RUN apt-get update
-
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
 RUN pip install --no-cache-dir -r requirements.txt
