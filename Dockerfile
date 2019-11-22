@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.6.4-alpine3.6
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
 WORKDIR /usr/src/app
