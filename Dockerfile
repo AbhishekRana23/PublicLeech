@@ -1,6 +1,14 @@
 FROM ubuntu:16.04
+RUN apk add --no-cache ca-certificates
+
+RUN apk add --no-cache --update \
+      git \
+      bash \
+      nodejs \
+      npm \
+      aria2
 RUN apt-get update
-RUN git init
+
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
 RUN pip install --no-cache-dir -r requirements.txt
