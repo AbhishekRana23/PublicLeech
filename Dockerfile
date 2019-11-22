@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM ubuntu:16.04
 RUN git init
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
