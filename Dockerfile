@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 RUN apt-get update 
-RUN apt install python3-pip && apt install git -y
+RUN apt install -y python3-pip && apt install -y git
 RUN git clone https://github.com/AbhishekRana23/PublicLeech.git
 RUN cd PublicLeech
 WORKDIR /usr/src/app
